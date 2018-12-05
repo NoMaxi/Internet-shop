@@ -1,0 +1,74 @@
+.menu {
+  background-color: $dark-gray;
+  min-height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__btn {
+    display: none;
+    height: 25px;
+    width: 30px;
+    background-color: $white;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 6px;
+    padding: 3px;
+
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+  }
+
+  &__btn-bar {
+    height: 2px;
+    background-color: $dark-gray;
+    width: 80%;
+  }
+
+  &__nav {
+    display: flex;
+
+    @include tablet {
+      display: none;
+    }
+    &--active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @include min-laptop {
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+
+    }
+  }
+  &__nav-link {
+    color: $white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-left: 35px;
+
+    @include tablet {
+      margin-left: 50px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+
+      @include  tablet {
+        margin-left: 50px;
+        margin-top: 48px;
+      }
+    }
+  }
+}

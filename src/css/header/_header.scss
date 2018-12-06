@@ -64,6 +64,8 @@
         }
     }
     &__cart {
+        position: relative;
+
         #{$root} {
             &__item-number {
                 background: $tomato;

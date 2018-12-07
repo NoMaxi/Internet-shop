@@ -19,6 +19,22 @@ $(function() {
     $('.owl-carousel').owlCarousel({
         loop:true,
         dots: true,
-        items:1
+        margin: 15,
+        items: 4,
+        responsive: {
+            0: {
+                items: 1,
+                dots: false
+            },
+            480: {
+                items: 2
+            },
+            720: {
+                items: 3
+            },
+            1200: {
+                items: 4
+            },
+        }
     });
 });

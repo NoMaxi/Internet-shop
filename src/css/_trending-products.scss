@@ -1,13 +1,43 @@
 .trending-products {
-    padding: 122px 15px;
+    padding: 122px 30px;
+
+    @include laptop {
+      padding: 102px 30px;
+    }
+    @include tablet {
+      padding: 81px 30px;
+    }
+    @include mobile-large {
+      padding: 61px 30px;
+    }
+    @include mobile {
+      padding: 41px 30px;
+    }
 
     &__title {
-      color: $dark-gray;
+        color: $dark-gray;
         font-size: 36px;
         font-weight: 700;
         line-height: 60px;
         text-transform: capitalize;
         margin-bottom: 55px;
+
+        @include laptop {
+            font-size: 30px;
+            margin-bottom: 46px;
+        }
+        @include tablet {
+            font-size: 24px;
+            margin-bottom: 37px;
+        }
+        @include mobile-large {
+            font-size: 22px;
+            margin-bottom: 28px;
+        }
+        @include mobile {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
   }
 
   &__carousel {
@@ -16,6 +46,19 @@
           display: flex;
           justify-content: center;
           margin-top: 52px;
+
+          @include laptop {
+              margin-top: 43px;
+          }
+          @include tablet {
+              margin-top: 35px;
+          }
+          @include mobile-large {
+              margin-top: 26px;
+          }
+          @include mobile {
+              margin-top: 18px;
+          }
 
           .owl-dot {
               width: 16px;
@@ -41,8 +84,8 @@
   }
 
   &__carousel-card {
-      width: calc((100% - 90px) / 4);
-      margin: 15px 0;
+      //width: calc((100% - 90px) / 4);
+      width: 100%;
       overflow: hidden;
       box-shadow: 0 1px 2px rgba(205,214,222,0.75);
   }

@@ -1,7 +1,18 @@
 // user
+
 .header {
     $root: &;
 
+    &--user {
+        #{$root} {
+            &__user {
+                @include mobile {
+                    position: static;
+                    padding-bottom: 16px;
+                }
+            }
+        }
+    }
     &__user {
         display: flex;
         align-items: center;

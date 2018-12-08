@@ -2,8 +2,12 @@
 @import 'variables';
 @import 'mixins';
 @import 'base';
-@import 'header';
-@import "menu";
-@import "welcome";
+@import 'header/all';
+@import 'menu';
+@import 'welcome';
 @import 'release-products';
+@import "trending-products";
+@import 'why-choose';
+@import 'become-author';
+
 // -------------------

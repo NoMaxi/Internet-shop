@@ -1,3 +1,17 @@
+.header {
+    &--user {
+        .cart-drop-down {
+            @include mobile-large {
+                right: auto;
+                left: 0;
+                top: 50px;
+            }
+            @include mobile {
+                width: 100%;
+            }
+        }
+    }
+}
 .cart-drop-down {
     display: none;
     width: 268px;
@@ -9,9 +23,13 @@
     right: 0;
     z-index: 10;
 
-    &__list {
-
+    @include mobile {
+        width: 100%;
+        top: 48px;
+        right: auto;
+        left: 0;
     }
+
     &__list-item {
         display: flex;
         padding: 22px;

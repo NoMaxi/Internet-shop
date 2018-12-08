@@ -1,11 +1,54 @@
 .header {
     $root: &;
 
+    &--user {
+        #{$root} {
+            &__inner {
+                @include mobile-large {
+                    flex-direction: column;
+                    padding: 24px 0 16px;
+                    height: auto;
+                }
+                @include mobile {
+                    padding: 24px 0 0;
+                }
+            }
+            &__right-s {
+                @include mobile-large {
+                    margin-top: 32px;
+                    justify-content: space-between;
+                }
+                @include mobile {
+                    justify-content: center;
+                }
+            }
+            &__notify {
+                @include mobile-large {
+                    margin: 0 -8px;
+                }
+                @include mobile {
+                    position: relative;
+                    width: 100%;
+                }
+            }
+            &__actions {
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+    }
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 92px;
+
+        @include mobile {
+            flex-direction: column;
+            padding: 24px 0 0;
+            height: auto;
+        }
     }
 
     &__logo {
@@ -16,10 +59,20 @@
         display: flex;
         align-items: center;
         align-self: stretch;
+        position: relative;
+
+        @include mobile {
+            justify-content: center;
+            margin-top: 32px;
+        }
     }
 
     &__help {
         font-size: 15px;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &__label-red {
@@ -32,8 +85,15 @@
         align-self: stretch;
         position: relative;
 
+        @include mobile {
+            position: static;
+            padding-bottom: 16px;
+        }
+
         &:hover {
-            .cart-drop-down {
+            .cart-drop-down,
+            .mail-drop-down,
+            .notify-drop-down {
                 display: block;
             }
         }
@@ -80,6 +140,7 @@
             }
         }
     }
+
     &__mail {
         #{$root} {
             &__item-number {
@@ -113,6 +174,14 @@
     &__actions {
         display: flex;
         margin: 0 -4px;
+
+        &--anon {
+            padding-left: 14px;
+
+            @include mobile {
+                padding-bottom: 16px;
+            }
+        }
 
         #{$root}{
             &__btn {

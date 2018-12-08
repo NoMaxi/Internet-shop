@@ -15,7 +15,7 @@
     
     <div class="container-fluid">
         <!-- header -->
-        <div class="header">
+        <div class="header header--user">
             <div class="container">
                 <div class="header__inner">
                     <a href="#" class="header__logo">
@@ -29,14 +29,94 @@
                         </div>
 
                         <div class="header__notify">
-                            <div class="header__notify-item header__notif">
-                                <i class="fas fa-bell"></i>
-                                <span class="header__item-number">8</span>
+
+                            <div class="header__notify-wrap">
+                                <div class="header__notify-item header__notif">
+                                    <i class="fas fa-bell"></i>
+                                    <span class="header__item-number">8</span>
+                                </div>
+
+                                <div class="notify-drop-down">
+                                    <ul class="notify-drop-down__list">
+                                        <li class="notify-drop-down__list-item notify-drop-down__list-item--unread">
+                                            <div class="notify-drop-down__author"></div>
+                                            <div class="notify-drop-down__info">
+                                                <div class="notify-drop-down__subject">Need WP Help!</div>
+                                                <div class="notify-drop-down__date">01 Dec, 2016</div>
+                                            </div>
+                                            <div class="notify-drop-down__icon">
+                                                <i class="far fa-bell"></i>
+                                            </div>
+                                        </li>
+                                        <li class="notify-drop-down__list-item">
+                                            <div class="notify-drop-down__author"></div>
+                                            <div class="notify-drop-down__info">
+                                                <div class="notify-drop-down__subject">Need WP Help!</div>
+                                                <div class="notify-drop-down__date">01 Dec, 2016</div>
+                                            </div>
+                                            <div class="notify-drop-down__icon">
+                                                <i class="far fa-bell"></i>
+                                            </div>
+                                        </li>
+                                        <li class="notify-drop-down__list-item">
+                                            <div class="notify-drop-down__author"></div>
+                                            <div class="notify-drop-down__info">
+                                                <div class="notify-drop-down__subject">Need WP Help!</div>
+                                                <div class="notify-drop-down__date">01 Dec, 2016</div>
+                                            </div>
+                                            <div class="notify-drop-down__icon">
+                                                <i class="far fa-bell"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
 
-                            <div class="header__notify-item header__mail">
-                                <i class="fas fa-envelope"></i>
-                                <span class="header__item-number">8</span>
+                            <div class="header__notify-wrap">
+                                <div class="header__notify-item header__mail">
+                                    <i class="fas fa-envelope"></i>
+                                    <span class="header__item-number">8</span>
+                                </div>
+
+                                <div class="mail-drop-down">
+                                    <ul class="mail-drop-down__list">
+                                        <li class="mail-drop-down__list-item mail-drop-down__list-item--unread">
+                                            <div class="mail-drop-down__author">
+                                                <img class="mail-drop-down__avatar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/200px-Cat03.jpg" alt="avatar">
+                                            </div>
+                                            <div class="mail-drop-down__info">
+                                                <div class="mail-drop-down__name">Kazi Fahim</div>
+                                                <div class="mail-drop-down__subject">Need WP Help!</div>
+                                                <div class="mail-drop-down__date">01 Dec, 2016</div>
+                                            </div>
+                                            <div class="mail-drop-down__icon">
+                                                <i class="far fa-envelope"></i>
+                                            </div>
+                                        </li>
+                                        <li class="mail-drop-down__list-item">
+                                            <div class="mail-drop-down__author"></div>
+                                            <div class="mail-drop-down__info">
+                                                <div class="mail-drop-down__name">Richi Lenal</div>
+                                                <div class="mail-drop-down__subject">Need WP Help!</div>
+                                                <div class="mail-drop-down__date">26 Nov, 2016</div>
+                                            </div>
+                                            <div class="mail-drop-down__icon">
+                                                <i class="far fa-envelope"></i>
+                                            </div>
+                                        </li>
+                                        <li class="mail-drop-down__list-item">
+                                            <div class="mail-drop-down__author"></div>
+                                            <div class="mail-drop-down__info">
+                                                <div class="mail-drop-down__name">PsdBosS</div>
+                                                <div class="mail-drop-down__subject">Psd Template Help!</div>
+                                                <div class="mail-drop-down__date">26 Nov, 2016</div>
+                                            </div>
+                                            <div class="mail-drop-down__icon">
+                                                <i class="fas fa-reply"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
 
                             <div class="header__notify-wrap">
@@ -133,8 +213,38 @@
             </div>
         </div>
 
-        <div class="menu"></div>
+        <section class="menu">
+            <div class="container w-100">
+                <div class="menu__btn">
+                    <div class="menu__btn-bar"></div>
+                    <div class="menu__btn-bar"></div>
+                    <div class="menu__btn-bar"></div>
+                </div>
+                <nav class="menu__nav">
+                    <a class="menu__nav-link link-no-decor" href="#">Home</a>
+                    <a class="menu__nav-link link-no-decor" href="#">About</a>
+                    <a class="menu__nav-link link-no-decor" href="#">WordPress</a>
+                    <a class="menu__nav-link link-no-decor" href="#">Joomla</a>
+                    <a class="menu__nav-link link-no-decor" href="#">PSD</a>
+                    <a class="menu__nav-link link-no-decor" href="#">Plugins</a>
+                    <a class="menu__nav-link link-no-decor" href="#">Components</a>
+                    <a class="menu__nav-link link-no-decor" href="#">Pages</a>
+                    <a class="menu__nav-link link-no-decor" href="#">Contact</a>
+                    <a class="menu__nav-link link-no-decor" href="#">Help</a>
+                </nav>
+            </div>
+        </section>
     </div>
-    
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+            crossorigin="anonymous"></script>
+
+    <!-- init plugin -->
+    <script src="js/init.js"></script>
 </body>
 </html>

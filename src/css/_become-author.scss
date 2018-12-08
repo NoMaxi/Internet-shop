@@ -1,0 +1,133 @@
+.become-author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $mint-cream;
+    height: 705px;
+
+    @include tablet {
+        height: 610px;
+    }
+
+    @include mobile-large {
+        height: 530px;
+    }
+
+    @include mobile {
+        height: 420px;
+    }
+
+    &__outer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $medium-gray;
+        width: 1105px;
+        height: 438px;
+        box-shadow: 0 0 34px 30px rgba(220, 220, 220, 0.75);
+
+        @include laptop {
+            width: 920px;
+        }
+
+        @include tablet {
+            width: 820px;
+        }
+
+        @include mobile-large {
+            width: 640px;
+            height: 400px;
+        }
+
+        @include mobile {
+            width: 420px;
+            height: 320px;
+            box-shadow: 0 0 34px 15px rgba(220, 220, 220, 0.75);
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $green-apple;
+        width: 653px;
+        height: 216px;
+
+        @include mobile-large {
+            width: 540px;
+        }
+
+        @include mobile {
+            width: 330px;
+            height: 210px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        margin: 0 60px;
+
+        @include mobile-large {
+            margin: 0 32px;
+        }
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+    
+    &__description {
+        color: $white;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36px;
+        text-transform: capitalize;
+
+        &--bold {
+            font-weight: 700;
+        }
+
+        @include mobile-large {
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            font-size: 21px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-self: center;
+        background-color: $white;
+        min-width: 225px;
+        height: 63px;
+
+        @include mobile {
+            height: 55px;
+            width: 100%;
+        }
+    }
+
+    &__link {
+        color: $dark-gray;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 63px;
+        text-transform: capitalize;
+        width: 100%;
+
+        @include mobile {
+            font-size: 17px;
+            line-height: 55px;
+        }
+    }
+}

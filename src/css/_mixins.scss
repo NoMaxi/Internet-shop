@@ -1,8 +1,15 @@
+// 1600px - widescreen-large
 // 1440px - widescreen
 // 1200px - laptop
 // 960px - tablet
 // 720px - mobile-large
 // 480px - mobile
+
+@mixin widescreen-large {
+    @media screen and (max-width: $widescreen-large) {
+        @content;
+    }
+}
 
 @mixin widescreen {
     @media screen and (max-width: $widescreen) {

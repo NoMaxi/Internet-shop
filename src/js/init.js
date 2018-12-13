@@ -37,4 +37,7 @@ $(function() {
             },
         }
     });
+
+    $('.upload-form select').styler();
+    $('.upload-form .upload-form__type-file').styler();
 });

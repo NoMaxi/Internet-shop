@@ -11,7 +11,7 @@
       padding: 61px 30px;
     }
     @include mobile {
-      padding: 41px 30px;
+      padding: 41px 12px;
     }
 
     &__title {
@@ -87,7 +87,6 @@
       //width: calc((100% - 90px) / 4);
       width: 100%;
       overflow: hidden;
-      box-shadow: 0 1px 2px rgba(205,214,222,0.75);
   }
 
   &__carousel-img {

@@ -30,6 +30,10 @@
 		justify-content: center;
 		align-items: center;
 		margin: 60px 0;
+
+		@include mobile {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__tabs-item {
@@ -44,6 +48,10 @@
 
 		&:first-child {
 			margin-left: 0;
+		}
+
+		@include mobile {
+			margin-bottom: 10px;
 		}
 	}
 

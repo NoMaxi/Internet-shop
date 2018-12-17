@@ -1,5 +1,10 @@
-#main {
+.main {
     background-color: $mint-cream;
     min-height: 100vh;
     padding-top: 40px;
+    padding-bottom: 111px;
+
+    &__container {
+        display: flex;
+    }
 }

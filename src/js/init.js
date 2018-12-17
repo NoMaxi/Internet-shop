@@ -19,22 +19,25 @@ $(function() {
     $('.owl-carousel').owlCarousel({
         loop:true,
         dots: true,
-        margin: 15,
+        // margin: 15,
         items: 4,
         responsive: {
             0: {
                 items: 1,
                 dots: false
             },
-            480: {
+            620: {
                 items: 2
             },
-            720: {
+            950: {
                 items: 3
             },
-            1200: {
+            1370: {
                 items: 4
             },
         }
     });
+
+    $('.upload-form select').styler();
+    $('.upload-form .upload-form__type-file').styler();
 });

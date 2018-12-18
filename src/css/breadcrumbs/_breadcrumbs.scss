@@ -1,0 +1,33 @@
+.breadcrumbs {
+    display: flex;
+    padding: 50px 0 40px;
+
+    &__item {
+        color: #263238;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    &__link {
+        text-decoration: none;
+        color: #b0bec5;
+        padding-right: 14px;
+        margin-right: 10px;
+        position: relative;
+
+        &:hover {
+            text-decoration: underline;
+        }
+        &::after {
+            display: block;
+            content: '-';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+    &__label {
+
+    }
+}

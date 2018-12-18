@@ -10,15 +10,15 @@
         padding: 116px 0 99px;
 
         @include laptop {
-            padding: 90px 0 90px;
+            padding: 90px 0 75px;
         }
 
         @include tablet {
-            padding: 60px 0 60px;
+            padding: 70px 0 50px;
         }
 
         @include mobile {
-            padding: 35px 0 35px;
+            padding: 50px 0 25px;
         }
     }
 
@@ -31,6 +31,12 @@
             justify-content: space-around;
         }
 
+        @include mobile-large {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
         @include mobile {
             justify-content: center;
         }
@@ -39,28 +45,27 @@
     &__item {
         min-width: 160px;
         max-width: 265px;
+        padding: 0 15px 15px;
 
         @include tablet {
-            margin-bottom: 40px;
-            width: 33%;
+            margin-bottom: 20px;
+            width: 33.33333%;
 
-            &:last-child,
-            &:nth-last-child(2) {
+            &:last-child {
+                max-width: available;
+                width: 100%;
                 margin-bottom: 0;
             }
         }
 
         @include mobile-large {
             width: 50%;
+            padding: 0 15px 10px;
         }
 
         @include mobile {
             width: 100%;
-            margin-bottom: 25px;
-
-            &:nth-last-child(2) {
-                margin-bottom: 25px;
-            }
+            padding: 0 15px 5px;
         }
 
         &-title {
@@ -180,7 +185,6 @@
 
             }
         }
-
     }
 
     &__list-item {
@@ -213,7 +217,6 @@
         }
     }
 
-
     &__sign-up-form {
         display: flex;
         background-color: #2f3c43;
@@ -226,7 +229,6 @@
         background-color: transparent;
         color: #697378;
         font-family: 'Roboto', sans-serif;
-        //height: 100%;
         width: $form-width - $submit-width;
         padding: 0 10px 0 16px;
         overflow: hidden;
@@ -270,7 +272,6 @@
         font-family: "Font Awesome 5 Free";
         font-size: 20px;
         font-weight: 900;
-        //margin-right: 15px;
         color: $white;
     }
 

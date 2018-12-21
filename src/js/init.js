@@ -38,6 +38,26 @@ $(function() {
         }
     });
 
+    (function () {
+        // sibedar
+        let sidebar = $('.left');
+        let close = $('.left__close-icon');
+
+        // .menu-btn - кнопка
+        $('.items__mobile-btn').click(function() {
+            if(sidebar.hasClass('left--active')) {
+                sidebar.removeClass('left--active');
+            }
+            else {
+                sidebar.addClass('left--active');
+            }
+        });
+
+        $(close).click(function() {
+            sidebar.removeClass('left--active');
+        });
+    }());
+
     if($("div").is(".upload-page-wrap")) {
         $('.upload-form select').styler();
         $('.upload-form .upload-form__type-file').styler();
@@ -60,4 +80,20 @@ $(function() {
     if($('div').is('.prod__price')) {
         $('.prod__price-wrapper select').styler();
     }
+
+    $("#modal").iziModal({
+        width: 730,
+        radius: 0,
+    });
+
+    $(document).on('click', '.btn-login-form', function (event) {
+        event.preventDefault();
+        // $('#modal').iziModal('setZindex', 99999);
+        // $('#modal').iziModal('open', { zindex: 99999 });
+        $('#modal').iziModal('open');
+    });
+
+    $(document).on('click', '.login__close', function (event) {
+        $('#modal').iziModal('close');
+    });
 });

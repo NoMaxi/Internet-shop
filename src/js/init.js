@@ -38,6 +38,26 @@ $(function() {
         }
     });
 
-    $('.upload-form select').styler();
-    $('.upload-form .upload-form__type-file').styler();
+    if($("div").is(".upload-page-wrap")) {
+        $('.upload-form select').styler();
+        $('.upload-form .upload-form__type-file').styler();
+    }
+
+    if($('div').is('.price-range__wrapper')){
+        $(".js-range-slider").ionRangeSlider({
+            type: "double",
+            skin: "round",
+            min: 0,
+            max: 4000,
+            from: 0,
+            to: 2000,
+            grid: false,
+            hide_min_max: true,
+            prefix: '$'
+        });
+    }
+
+    if($('div').is('.prod__price')) {
+        $('.prod__price-wrapper select').styler();
+    }
 });

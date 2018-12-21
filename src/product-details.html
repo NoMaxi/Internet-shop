@@ -7,8 +7,7 @@
     <title>Internet-shop</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!-- owl carousel -->
     <link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
     <!-- form-styler -->
@@ -18,7 +17,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
     <div class="container-fluid">
         <!-- header -->
         <div class="header header--user">
@@ -207,12 +206,12 @@
                                     </li>
                                 </ul>
                             </div>
-                    
+
                         </div>
-                        
+
 
                         <div class="header__actions">
-                            <a href="#" class="header__btn header__btn--red">Logout</a>   
+                            <a href="#" class="header__btn header__btn--red">Logout</a>
                         </div>
                     </div>
                 </div>
@@ -240,7 +239,6 @@
                 </nav>
             </div>
         </section>
-
         <section class="premium-wp">
             <div class="container">
                 <div class="premium-wp__inner">
@@ -252,118 +250,154 @@
                 </div>
             </div>
         </section>
+        <main id="main" class="main">
+            <div class="prod">
+                <div class="container">
 
-        <div class="upload-page-wrap">
-            <div class="container">
-                <form class="upload-form">
-                
-                    <h4 class="upload-form__title">Upload Your item</h4>
-                    
-                    <div class="upload-form__form-group">
-                        <div class="upload-form__input-group">
-                            <label for="1" class="upload-form__label">
-                                <span>Select Categories</span>
-                                <span class="upload-form__mark">*</span>
-                            </label>
-                            <select id='1'>
-                                <option>Select</option>
-                                <option>Пункт 1</option>
-                                <option>Пункт 2</option>
-                                <option disabled="">Пункт 3</option>
-                                <option>Пункт 4</option>
-                                <option>Пункт 5</option>
-                            </select>
-                        </div>
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <span class="breadcrumbs__label">Product Page</span>
+                        </li>
+                    </ul>
+                    <!-- / breadcrumbs -->
 
-                        <div class="upload-form__input-group">
-                            <label class="upload-form__label">
-                                <span>Product Name</span>
-                                <span class="upload-form__mark">*</span>
-                            </label>
-                            <input class="upload-form__text-input" type="text" placeholder="Enter your product name here...">
+                    <div class="prod__inner">
+                        <div class="prod__item">
+                            <div class="prod__item-img">
+                                <img class="prod__img" src="img/prod-item-img.jpg" alt="prod-item">
+                            </div>
+                            <div class="prod__item-info">
+                                <h4 class="prod__item-title">GTBuilder - Construction & Building WordPress Theme</h4>
+                                <p class="prod__item-text">Bmply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived noning essentially unchanged. </p>
+                                <div class="prod__item-buttons">
+                                    <div class="prod__item-info-buttons">
+                                        <a class="prod__item-info-button prod__item-info-button--tomato" href="#">Live Preview</a>
+                                        <a class="prod__item-info-button prod__item-info-button--dark" href="#">Screenshots</a>
+                                        <a class="prod__item-info-button prod__item-info-button--green-apple" href="#">Documentation</a>
+                                    </div>
+                                    <div class="prod__item-link-buttons">
+                                        <a class="prod__item-link-button prod__item-link-button--facebook" href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a class="prod__item-link-button prod__item-link-button--twitter" href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a class="prod__item-link-button prod__item-link-button--linkedin" href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a class="prod__item-link-button prod__item-link-button--pinterest" href="#">
+                                            <i class="fab fa-pinterest"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!-- / prod__item -->
 
-                        <div class="upload-form__input-group">
-                            <label class="upload-form__label">
-                                <span>Product Description</span>
-                                <span class="upload-form__mark">*</span>
-                            </label>
-                            <textarea class="upload-form__textarea" placeholder="<h1> Type your text  here </h1/>"></textarea>
-                        </div>
+                        <div class="prod__sidebar">
+                            <div class="prod__sidebar-item">
+                                <div class="prod__price">
+                                    <h4 class="prod__sidebar-title">product price</h4>
+                                    <div class="prod__sidebar-bar"></div>
+                                    <div class="prod__price-wrapper">
+                                        <span class="prod__price-value">&dollar;59.00</span>
+                                        <select>
+                                            <option>Regular</option>
+                                            <option>Special</option>
+                                        </select>
+                                    </div>
+                                    <div class="prod__price-btn prod__price-btn--cart">
+                                        <span class="prod__price-btn-text"><i class="prod__price-btn-icon fas fa-shopping-cart"></i>add to cart</span>
+                                    </div>
+                                    <div class="prod__price-btn prod__price-btn--favourites">
+                                        <span class="prod__price-btn-text"><i class="prod__price-btn-icon far fa-heart"></i>add to favourites</span>
+                                    </div>
+                                    <div class="prod__price-btn prod__price-btn--buy">
+                                        <span class="prod__price-btn-text">buy now</span>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <div class="upload-form__input-group">
-                            <label class="upload-form__label">
-                                <span>Upload Main File</span>
-                                <span class="upload-form__mark">*</span>
-                            </label>
-                            <input type="file" class="upload-form__type-file">
-                        </div>
 
-                        <div class="upload-form__input-group">
-                            <label class="upload-form__label">
-                                <span>Upload Screenshots</span>
-                                <span class="upload-form__mark">*</span>
-                            </label>
-                            <input type="file" class="upload-form__type-file">
-                        </div>
+                            <div class="prod__sidebar-item">
+                                <div class="prod__author">
+                                    <h4 class="prod__sidebar-title">product author</h4>
+                                    <div class="prod__sidebar-bar"></div>
+                                    <div class="prod__author-data">
+                                        <img class="prod__author-avatar" src="img/author-avatar.png" alt="author avatar">
+                                        <div class="prod__author-profile">
+                                            <span class="prod__author-name">PsdBoss</span>
+                                            <div class="prod__author-btn">
+                                                <a href="#" class="prod__author-btn-link link-no-decor text-center">view profile</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="prod__author-badge-list w-100">
+                                        <li class="prod__author-badge-item">
+                                            <img src="img/icon-smile.png" alt="badge">
+                                        </li>
+                                        <li class="prod__author-badge-item">
+                                            <img src="img/icon-leaf.png" alt="badge">
+                                        </li>
+                                        <li class="prod__author-badge-item">
+                                            <img src="img/icon-lightning.png" alt="badge">
+                                        </li>
+                                        <li class="prod__author-badge-item">
+                                            <img src="img/icon-F.png" alt="badge">
+                                        </li>
+                                        <li class="prod__author-badge-item">
+                                            <img src="img/icon-hieroglyph.png" alt="badge">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                        <div class="upload-form__input-group">
-                            <label for="2" class="upload-form__label">
-                                <span>File Included</span>
-                                <span class="upload-form__mark">*</span>
-                            </label>
-                            <select id='2'>
-                                <option>Select</option>
-                                <option>Пункт 1</option>
-                                <option>Пункт 2</option>
-                                <option disabled="">Пункт 3</option>
-                                <option>Пункт 4</option>
-                                <option>Пункт 5</option>
-                            </select>
-                        </div>
+                            <div class="prod__sidebar-item">
+                                <div class="prod__sales">
+                                    <i class="prod__sales-icon fas fa-shopping-cart"></i>
+                                    <span class="prod__sales-number">05</span>
+                                    <span class="prod__sales-text">sales</span>
+                                </div>
+                            </div>
 
-                        <div class="upload-form__input-group">
-                            <label class="upload-form__label">
-                                <span>File Dimensions</span>
-                                <span class="upload-form__mark">*</span>
-                            </label>
-                            <input class="upload-form__text-input" type="text" placeholder="Enter the item  dimentionss here ...">
+                            <div class="prod__sidebar-item">
+                                <div class="prod__information">
+                                    <h4 class="prod__sidebar-title">product
+                                        information</h4>
+                                    <div class="prod__sidebar-bar"></div>
+                                    <ul class="prod__information-list">
+                                        <li class="prod__information-item">Released On:
+                                            <span class="prod__information-item-value">1 January, 2016</span>
+                                        </li>
+                                        <li class="prod__information-item">Last Update:
+                                            <span class="prod__information-item-value"> 20 April, 2016</span>
+                                        </li>
+                                        <li class="prod__information-item">Download: <span
+                                                class="prod__information-item-value">613</span>
+                                        </li>
+                                        <li class="prod__information-item">Version: <span
+                                                class="prod__information-item-value">1.1</span>
+                                        </li>
+                                        <li class="prod__information-item">Compatibility:
+                                            <span class="prod__information-item-value">4+</span>
+                                        </li>
+                                        <li class="prod__information-item">Compatible
+                                            Browsers: <span
+                                                    class="prod__information-item-value">IE9, IE10, IE11, Firefox, Safari,
+Opera, Chrome</span></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="upload-form__input-group">
-                            <label class="upload-form__label">
-                                <span>Item Tags</span>
-                                <span class="upload-form__mark">*</span>
-                            </label>
-                            <input class="upload-form__text-input" type="text" placeholder="Enter Tag Here">
-                        </div>
+                        <!--/ prod__sidebar-->
                     </div>
-
-                    <h4 class="upload-form__title">Set Your Price (US$)</h4>
-
-                    <div class="upload-form__form-group">
-                            <div class="upload-form__input-group">
-                                <label class="upload-form__label">
-                                    <span>Regular License</span>
-                                    <span class="upload-form__mark">*</span>
-                                </label>
-                                <input class="upload-form__text-input" type="number" placeholder="$00.00">
-                            </div>
-
-                            <div class="upload-form__input-group">
-                                <label class="upload-form__label">
-                                    <span>Extended License</span>
-                                    <span class="upload-form__mark">*</span>
-                                </label>
-                                <input class="upload-form__text-input" type="number" placeholder="$00.00">
-                            </div>
-                            <div class="upload-form__input-group upload-form__input-group--submit">
-                                <button type="submit" class="upload-form__btn-submit">Submit</button>
-                            </div>
-                    </div>
-                </form>
+                    <!-- / prod__inner -->
+                </div>
             </div>
-        </div>
+        </main>
 
         <footer class="footer">
             <div class="footer__top">
@@ -467,22 +501,22 @@
             </div>
         </footer>
     </div>
-    
-    <!-- jquery -->
+
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+            crossorigin="anonymous"></script>
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+            crossorigin="anonymous"></script>
 
     <!-- owl carousel -->
     <script src="js/owl.carousel.min.js"></script>
 
-    <!-- Jquery UI -->
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
-        crossorigin="anonymous"></script>
-
     <!-- form-styler -->
     <script src="js/jquery.formstyler.min.js"></script>
 
-    <!-- init -->
+    <!-- init plugin -->
     <script src="js/init.js"></script>
 </body>
 </html>

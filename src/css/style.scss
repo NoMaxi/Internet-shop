@@ -5,6 +5,7 @@
 @import 'header/all';
 @import 'menu';
 @import 'welcome';
+@import "breadcrumbs/all";
 @import "product/all";
 @import 'release-products';
 @import "trending-products";
@@ -15,4 +16,7 @@
 @import "main/all";
 @import 'upload-form/all';
 @import 'footer/all';
+@import "product-details/all";
+
+
 // -------------------

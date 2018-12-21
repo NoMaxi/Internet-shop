@@ -1,0 +1,200 @@
+.prod {
+
+    & .breadcrumbs {
+        padding-top: 0;
+    }
+
+    &__inner {
+        display: flex;
+
+        @include tablet {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        flex: 0 0 75%;
+        max-width: 75%;
+        padding-right: 15px;
+
+        @include tablet {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-right: 0;
+        }
+    }
+
+    &__item-img {
+        padding: 20px;
+        border: 1px solid $light-silver;
+        background-color: $white;
+    }
+    &__img {
+        max-width: 100%;
+    }
+    &__item-info {
+        margin-top: 38px;
+        margin-bottom: 55px;
+    }
+    &__item-title {
+        color: $dark-gray;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 22px;
+    }
+    &__item-text {
+        color: #707070;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 40px;
+    }
+    &__item-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include laptop {
+            flex-direction: column;
+        }
+
+        @include mobile {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+
+    &__item-info-buttons {
+
+        @include laptop {
+            margin-bottom: 20px;
+        }
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0;
+            justify-content: space-around;
+        }
+    }
+
+    &__item-info-button {
+        display: inline-block;
+        text-align: center;
+        height: 50px;
+        padding: 15px 24px;
+        cursor: pointer;
+        color: $mint-cream;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+
+        @include mobile-large {
+            height: 40px;
+            padding: 10px 15px;
+        }
+
+        & + & {
+            margin-left: 15px;
+
+            @include laptop {
+                margin-left: 10px;
+            }
+            @include mobile {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+
+        &--tomato {
+            background-color: $tomato;
+            &:hover {
+                box-shadow: 0 0 12px $tomato;
+            }
+        }
+        &--dark {
+            background-color: #455a64;
+            padding-left: 34px;
+            padding-right: 34px;
+
+            @include mobile-large {
+                padding: 10px 15px;
+            }
+
+            &:hover {
+                box-shadow: 0 0 12px #455a64;
+            }
+        }
+        &--green-apple {
+            background-color: $green-apple;
+            &:hover {
+                box-shadow: 0 0 12px $green-apple;
+            }
+
+        }
+    }
+
+    &__item-link-buttons {
+        display: flex;
+
+        @include mobile {
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+
+    &__item-link-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 54px;
+        height: 50px;
+        color: #fff;
+        transition: all .3s ease-in-out;
+
+        @include mobile-large {
+            width: 44px;
+            height: 40px;
+        }
+
+        & + & {
+            margin-left: 3px;
+
+            @include mobile {
+                margin-top: 3px;
+                margin-left: 0;
+            }
+        }
+
+        &--facebook {
+            background-color: #6370b6;
+
+            &:hover {
+                box-shadow: 0 0 6px #6370b6;
+            }
+        }
+        &--twitter {
+            background-color: #64b5f6;
+            &:hover {
+                box-shadow: 0 0 6px #64b5f6;
+            }
+        }
+        &--linkedin {
+            background-color: #4f71ce;
+            &:hover {
+                box-shadow: 0 0 6px #4f71ce;
+            }
+        }
+        &--pinterest {
+            background-color: #d32f2f;
+            &:hover {
+                box-shadow: 0 0 6px #d32f2f;
+            }
+        }
+    }
+}

@@ -1,101 +1,156 @@
 .items {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  &__sort {
-      background-color: #fff;
-      padding: 17px 25px 17px 21px;
-      border: 1px solid #d7d7d7;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      line-height: 24px;
-  }
-
-  &__sort-left {
-    font-size: 14px;
-    color: #707070;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 
-    & .fa-sort-amount-down {
-      color: #455a64;
-      margin-right: 12px;
+    &__sort {
+        background-color: $white;
+        padding: 17px 25px 17px 21px;
+        border: 1px solid $light-silver;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 24px;
     }
 
-    & .fa-sort {
-      font-size: 18px;
-      margin-left: 12px;
-    }
-  }
+    &__sort-left {
+        font-size: 14px;
+        color: $dark-silver;
+        display: flex;
+        align-items: center;
 
-  &__sort-right {
-    color: #90a4ae;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
+        & .fa-bars {
+            color: $dark-silver;
+            transition: color .3s ease-out;
+            margin-right: 15px;
+            cursor: pointer;
 
-    & i + i{
-      margin-left: 12px;
-    }
+            &:hover,
+            &--active {
+                color: $green-apple;
+            }
+        }
 
-    & .fas--active {
-      color: $green-apple;
-    }
-  }
+        & .fa-sort-amount-down {
+            color: #455a64;
+            margin-right: 12px;
+            cursor: pointer;
 
-  &__cards {
-    margin: 15px -15px;
-    display: flex;
-    flex-wrap: wrap;
+            &:hover,
+            &--active {
+                color: $green-apple;
+            }
+        }
 
-    .product__picture {
-      height: 180px;
-    }
+        & .fa-sort {
+            font-size: 18px;
+            margin-left: 12px;
+            cursor: pointer;
 
-    .product__info {
-      padding: 26px 20px 26px 23px;
-    }
-    .product__bottom {
-      padding: 16px 22px 19px 23px;
-    }
-    .product__name {
-      font-size: 16px;
-    }
-  }
-
-  &__card-wrapper {
-    width: 33.3333%;
-  }
-
-  &__pages-numbers {
-    display: flex;
-    align-self: flex-start;
-    margin-top: 30px;
-  }
-
-  &__pages-number {
-    width: 43px;
-    height: 38px;
-    box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    color: inherit;
-
-    & + & {
-      margin-left: 8px;
+            &:hover,
+            &--active {
+                color: $green-apple;
+            }
+        }
     }
 
-    &--active {
-      color: #fff;
-      box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
-      background-color: #e74c3c;
+    &__sort-right {
+        color: $light-blue;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+
+        & .fa-th-large {
+            cursor: pointer;
+
+            &:hover {
+                color: $green-apple;
+            }
+        }
+
+        & .fa-th-list {
+            cursor: pointer;
+
+            &:hover {
+                color: $green-apple;
+            }
+        }
+
+        & i + i {
+            margin-left: 12px;
+        }
+
+        & .fas--active {
+            color: $green-apple;
+        }
     }
-  }
+
+    &__cards {
+        margin: 15px -15px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .product__picture {
+            height: 180px;
+
+            @include mobile-large {
+                height: 49vw;
+                min-height: 170px;
+            }
+        }
+
+        .product__info {
+            padding: 26px 20px 26px 23px;
+        }
+
+        .product__bottom {
+            padding: 16px 22px 19px 23px;
+        }
+
+        .product__name {
+            font-size: 16px;
+        }
+    }
+
+    &__card-wrapper {
+        width: 33.3333%;
+
+        @include laptop {
+            width: 50%;
+        }
+
+        @include mobile-large {
+            width: 100%;
+        }
+    }
+
+    &__pages-numbers {
+        display: flex;
+        align-self: flex-start;
+        margin-top: 30px;
+    }
+
+    &__pages-number {
+        width: 43px;
+        height: 38px;
+        box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+        background-color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: inherit;
+
+        & + & {
+            margin-left: 8px;
+        }
+
+        &--active {
+            color: $white;
+            box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+            background-color: $tomato;
+        }
+    }
 
 }

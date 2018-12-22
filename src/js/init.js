@@ -1,6 +1,7 @@
 $(function() {
     $('.release-products__tabs').tabs();
-    
+    $('.prod-features__tabs').tabs();
+
     (function () {
         // .menu__nav -  навигация
         let nav = $('.menu__nav');

@@ -12,11 +12,6 @@
         flex-direction: column;
         flex-grow: 1;
         padding-right: 30px;
-        //position: relative;
-        //width: 100%;
-        //min-height: 1px;
-        //flex: 0 0 75%;
-        //max-width: 75%;
 
         @include tablet {
             padding-right: 0;

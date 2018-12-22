@@ -3,6 +3,14 @@
     min-height: 100vh;
     padding-bottom: 111px;
 
+    @include tablet {
+        padding-bottom: 80px;
+    }
+
+    @include mobile {
+        padding-bottom: 50px;
+    }
+
     &__container {
         display: flex;
     }

@@ -81,10 +81,12 @@ $(function() {
         $('.prod__price-wrapper select').styler();
     }
 
-    $("#modal").iziModal({
-        width: 730,
-        radius: 0,
-    });
+    if($('div').is('#modal')) {
+        $("#modal").iziModal({
+            width: 730,
+            radius: 0,
+        });
+    }
 
     $(document).on('click', '.btn-login-form', function (event) {
         event.preventDefault();

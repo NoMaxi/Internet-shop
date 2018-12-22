@@ -1,9 +1,4 @@
 .prod {
-
-    & .breadcrumbs {
-        padding-top: 0;
-    }
-
     &__inner {
         display: flex;
 
@@ -12,17 +7,18 @@
         }
     }
 
-    &__item {
-        position: relative;
-        width: 100%;
-        min-height: 1px;
-        flex: 0 0 75%;
-        max-width: 75%;
-        padding-right: 15px;
+    &__main {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding-right: 30px;
+        //position: relative;
+        //width: 100%;
+        //min-height: 1px;
+        //flex: 0 0 75%;
+        //max-width: 75%;
 
         @include tablet {
-            flex: 0 0 100%;
-            max-width: 100%;
             padding-right: 0;
         }
     }

@@ -1,0 +1,96 @@
+.prod-more {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        background-color: $white;
+        border: 1px solid $light-silver;
+        margin-bottom: 14px;
+    }
+
+    &__title-text {
+        color: $dark-gray;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 58px;
+        padding: 21px 28px;
+        text-transform: capitalize;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+
+    &__item {
+        padding: 14px 15px;
+        width: 33.33333%;
+
+        @include laptop {
+            width: 50%;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    &__item-inner {
+        display: flex;
+        background-color: $white;
+        box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+    }
+
+    &__item-picture {
+        display: block;
+        min-height: 90px;
+        min-width: 100px;
+        height: 90px;
+        width: 100px;
+        max-width: 100%;
+
+        @include laptop {
+            $width: 140px;
+            height: $width / 100px * 90px;
+            width: $width;
+        }
+
+        @include mobile {
+            $width: 50vw;
+            height: $width / 100px * 90px;
+            width: $width;
+        }
+    }
+
+    &__item-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 19px 21px 10px;
+
+        @include mobile {
+            justify-content: space-around;
+        }
+    }
+
+    &__item-name {
+        color: $dark-gray;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+
+    &__item-type {
+        color: $green-apple;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    &__item-price {
+        color: $dark-gray;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}

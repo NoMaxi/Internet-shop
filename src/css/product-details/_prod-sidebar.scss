@@ -1,31 +1,62 @@
 .prod__sidebar {
     display: flex;
     flex-direction: column;
-    flex: 0 0 25%;
-    position: relative;
-    padding-left: 15px;
-    min-height: 1px;
-    width: 100%;
-    max-width: 25%;
+    width: 270px;
+    min-width: 270px;
+    //flex: 0 0 25%;
+    //position: relative;
+    //padding-left: 15px;
+    //min-height: 1px;
+    //width: 100%;
+    //max-width: 25%;
 
     @include tablet {
         display: flex;
-        flex: 0 0 100%;
-        max-width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
         padding-left: 0;
         margin-bottom: 20px;
+        width: 100%;
     }
 
     &-item {
         display: flex;
         flex-direction: column;
-        background-color: #ffffff;
+        background-color: $white;
         border: 1px solid $light-silver;
         margin-bottom: 30px;
         padding: 26px 30px 30px;
 
         &:last-child {
             margin-bottom: 0;
+        }
+
+        @include tablet {
+            width: 60%;
+            margin-bottom: 20px;
+
+            &:nth-child(2) {
+                flex-grow: 1;
+                margin-left: 20px;
+                width: 35%;
+            }
+
+            &:nth-child(3) {
+                display: none;
+            }
+
+            &:last-child {
+                width: 100%;
+            }
+        }
+
+        @include mobile-large {
+            width: 100%;
+
+            &:nth-child(2) {
+                width: 100%;
+                margin-left: 0;
+            }
         }
     }
 

@@ -7,7 +7,12 @@
     <title>Internet-shop</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
+    <!-- range slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css"/>
     <!-- custom style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -201,9 +206,7 @@
                                     </li>
                                 </ul>
                             </div>
-                    
                         </div>
-                        
 
                         <div class="header__actions">
                             <a href="#" class="header__btn header__btn--red">Logout</a>   
@@ -234,6 +237,7 @@
                 </nav>
             </div>
         </section>
+
         <section class="premium-wp">
             <div class="container">
                 <div class="premium-wp__inner">
@@ -245,474 +249,629 @@
                 </div>
             </div>
         </section>
+
         <main id="main" class="main">
-            <div class="container main__container">
-                <div class="left">
-                    <div class="categories">
-                        <div class="categories__title">
-                            <span>Categories ategories ategories Categories ategories ategoriesCategories ategories ategoriesCategories ategories ategories </span>
+            <div class="container">
+
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <span class="breadcrumbs__label">Product Page</span>
+                    </li>
+                </ul>
+
+                <div class="main__container">
+                    <div class="left">
+                        <div class="left__close">
+                            <i class="left__close-icon fas fa-times"></i>
                         </div>
-                        <!-- / categories__title -->
-                        <ul class="categories__list">
-                            <li class="categories__item">
-                                <a class="link-inherit link-no-decor categories__link" href="#">WordPressWordPressWordPressWordPress</a>
-                                <span class="categories__amount">(15000000</span>
-                                <span class="categories__amount-bracket">)</span>
-                            </li>
-                            <!-- / categories__item -->
-                            <li class="categories__item">
-                                <a class="link-inherit link-no-decor categories__link" href="#">Joomla</a>
-                                <span class="categories__amount">(100</span>
-                                <span class="categories__amount-bracket">)</span>
-                            </li>
-                            <!-- / categories__item -->
-                            <li class="categories__item">
-                                <a class="link-inherit link-no-decor categories__link" href="#">PSD</a>
-                                <span class="categories__amount">(50</span>
-                                <span class="categories__amount-bracket">)</span>
-                            </li>
-                            <!-- / categories__item -->
-                            <li class="categories__item">
-                                <a class="link-inherit link-no-decor categories__link" href="#">Plugins</a>
-                                <span class="categories__amount">(60</span>
-                                <span class="categories__amount-bracket">)</span>
-                            </li>
-                            <!-- / categories__item -->
-                            <li class="categories__item">
-                                <a class="link-inherit link-no-decor categories__link" href="#">Components</a>
-                                <span class="categories__amount">(40</span>
-                                <span class="categories__amount-bracket">)</span>
-                            </li>
-                            <!-- / categories__item -->
-                        </ul>
-                        <!-- / categories__list -->
+
+                        <div class="categories">
+                            <div class="categories__title">
+                                <span>Categories</span>
+                            </div>
+                            <!-- / categories__title -->
+                            <ul class="categories__list">
+                                <li class="categories__item">
+                                    <a class="link-inherit link-no-decor categories__link"
+                                       href="#">WordPress</a>
+                                    <span class="categories__amount">(150</span>
+                                    <span class="categories__amount-bracket">)</span>
+                                </li>
+                                <!-- / categories__item -->
+                                <li class="categories__item">
+                                    <a class="link-inherit link-no-decor categories__link"
+                                       href="#">Joomla</a>
+                                    <span class="categories__amount">(100</span>
+                                    <span class="categories__amount-bracket">)</span>
+                                </li>
+                                <!-- / categories__item -->
+                                <li class="categories__item">
+                                    <a class="link-inherit link-no-decor categories__link"
+                                       href="#">PSD</a>
+                                    <span class="categories__amount">(50</span>
+                                    <span class="categories__amount-bracket">)</span>
+                                </li>
+                                <!-- / categories__item -->
+                                <li class="categories__item">
+                                    <a class="link-inherit link-no-decor categories__link"
+                                       href="#">Plugins</a>
+                                    <span class="categories__amount">(60</span>
+                                    <span class="categories__amount-bracket">)</span>
+                                </li>
+                                <!-- / categories__item -->
+                                <li class="categories__item">
+                                    <a class="link-inherit link-no-decor categories__link"
+                                       href="#">Components</a>
+                                    <span class="categories__amount">(40</span>
+                                    <span class="categories__amount-bracket">)</span>
+                                </li>
+                                <!-- / categories__item -->
+                            </ul>
+                            <!-- / categories__list -->
+                        </div>
+                        <!-- / categories -->
+
+                        <form class="price-range">
+                            <div class="price-range__title">Price Range</div>
+                            <div class="price-range__wrapper">
+                                <input type="text" class="js-range-slider" name="my_range"
+                                       value=""/>
+                            </div>
+                            <button type="submit" class="price-range__submit">
+                                <i class="fas fa-search"></i>
+                                <span>Search</span>
+                            </button>
+                        </form>
+                        <!-- / price range-->
+
+                        <div class="sidebar-hot">
+                            <div class="sidebar-hot__title">Top 10 Sellers</div>
+                            <div class="sidebar-hot__wrapper">
+                                <div class="product">
+                                    <a href="#" class="product__inner">
+                                        <div class="product__picture"></div>
+                                        <div class="product__info">
+                                            <div>
+                                                <div class="product__name">The Post Grid Pro
+                                                </div>
+                                                <div class="product__category">WordPress Plugin
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="product__price">&dollar;40</div>
+                                            </div>
+                                        </div>
+                                        <div class="product__bottom">
+                                            <div class="product__bottom-left">
+                                                <div class="product__avatar"></div>
+                                                <div class="product__author-name">
+                                                    PsdBosS
+                                                </div>
+                                            </div>
+                                            <div class="product__bottom-right">
+                                                <div class="product__rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="product">
+                                    <a href="#" class="product__inner">
+                                        <div class="product__picture"></div>
+                                        <div class="product__info">
+                                            <div>
+                                                <div class="product__name">Responsive APP
+                                                </div>
+                                                <div class="product__category">WordPress Plugin
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="product__price">&dollar;20</div>
+                                            </div>
+                                        </div>
+                                        <div class="product__bottom">
+                                            <div class="product__bottom-left">
+                                                <div class="product__avatar"></div>
+                                                <div class="product__author-name">
+                                                    Radiustheme
+                                                </div>
+                                            </div>
+                                            <div class="product__bottom-right">
+                                                <div class="product__rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="product">
+                                    <a href="#" class="product__inner">
+                                        <div class="product__picture"></div>
+                                        <div class="product__info">
+                                            <div>
+                                                <div class="product__name">The Post Grid Pro
+                                                </div>
+                                                <div class="product__category">WordPress Plugin
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="product__price">&dollar;12</div>
+                                            </div>
+                                        </div>
+                                        <div class="product__bottom">
+                                            <div class="product__bottom-left">
+                                                <div class="product__avatar"></div>
+                                                <div class="product__author-name">
+                                                    Radiustheme
+                                                </div>
+                                            </div>
+                                            <div class="product__bottom-right">
+                                                <div class="product__rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <a href="#" class="sidebar-hot__link-more">
+                                    View All
+                                </a>
+                            </div>
+                            <!--/ sidebar-hot-wrapper-->
+                        </div>
+                        <!-- /sidebar-hot-->
                     </div>
-                    <!-- / categories -->
-                </div>
-                <div class="right">
-                    <div class="items">
-                        <div class="items__sort w-100">
-                            <div class="items__sort-left">
-                                <i class="fas fa-sort-amount-down"></i>
-                                <span>Sort by: New Items</span>
-                                <i class="fas fa-sort"></i>
+                    <!-- / left -->
+
+                    <div class="right">
+                        <div class="items">
+                            <div class="items__sort w-100">
+                                <div class="items__sort-left">
+                                    <i class="items__mobile-btn fas fa-bars"></i>
+                                    <i class="fas fa-sort-amount-down"></i>
+                                    <span>Sort by: New Items</span>
+                                    <i class="fas fa-sort"></i>
+                                </div>
+                                <!-- / items__sort-left -->
+                                <div class="items__sort-right">
+                                    <i class="fas fa-th-large fas--active"></i>
+                                    <i class="fas fa-th-list"></i>
+                                </div>
+                                <!-- / items__sort-right -->
                             </div>
-                            <!-- / items__sort-left -->
-                            <div class="items__sort-right">
-                                <i class="fas fa-th-large fas--active"></i>
-                                <i class="fas fa-th-list"></i>
+                            <!-- / items__sort -->
+                            <div class="items__cards">
+                                <div class="items__card-wrapper">
+                                    <div class="product">
+                                        <a href="#" class="product__inner">
+                                            <div class="product__picture"></div>
+                                            <div class="product__info">
+                                                <div>
+                                                    <div class="product__name">WISTIA Corporate</div>
+                                                    <div class="product__category">WordPress</div>
+                                                </div>
+                                                <div>
+                                                    <div class="product__price">$59</div>
+                                                </div>
+                                            </div>
+                                            <div class="product__bottom">
+                                                <div class="product__bottom-left">
+                                                    <div class="product__avatar"></div>
+                                                    <div class="product__author-name">PsdBosS</div>
+                                                </div>
+                                                <div class="product__bottom-right">
+                                                    <div class="product__rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="product__rating-index">( 05)</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="items__card-wrapper">
+                                    <div class="product">
+                                        <a href="#" class="product__inner">
+                                            <div class="product__picture"></div>
+                                            <div class="product__info">
+                                                <div>
+                                                    <div class="product__name">Cartoon Face</div>
+                                                    <div class="product__category">Illsatration</div>
+                                                </div>
+                                                <div>
+                                                    <div class="product__price">$10</div>
+                                                </div>
+                                            </div>
+                                            <div class="product__bottom">
+                                                <div class="product__bottom-left">
+                                                    <div class="product__avatar"></div>
+                                                    <div class="product__author-name">Mikestro</div>
+                                                </div>
+                                                <div class="product__bottom-right">
+                                                    <div class="product__rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="product__rating-index">( 05)</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="items__card-wrapper">
+                                    <div class="product">
+                                        <a href="#" class="product__inner">
+                                            <div class="product__picture"></div>
+                                            <div class="product__info">
+                                                <div>
+                                                    <div class="product__name">Food Menu</div>
+                                                    <div class="product__category">Plugins</div>
+                                                </div>
+                                                <div>
+                                                    <div class="product__price">$15</div>
+                                                </div>
+                                            </div>
+                                            <div class="product__bottom">
+                                                <div class="product__bottom-left">
+                                                    <div class="product__avatar"></div>
+                                                    <div class="product__author-name">Gimsz</div>
+                                                </div>
+                                                <div class="product__bottom-right">
+                                                    <div class="product__rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="product__rating-index">( 05)</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="items__card-wrapper">
+                                    <div class="product">
+                                        <a href="#" class="product__inner">
+                                            <div class="product__picture"></div>
+                                            <div class="product__info">
+                                                <div>
+                                                    <div class="product__name">Grand Ballet - Dance</div>
+                                                    <div class="product__category">PSD Template</div>
+                                                </div>
+                                                <div>
+                                                    <div class="product__price">$12</div>
+                                                </div>
+                                            </div>
+                                            <div class="product__bottom">
+                                                <div class="product__bottom-left">
+                                                    <div class="product__avatar"></div>
+                                                    <div class="product__author-name">Greenta9</div>
+                                                </div>
+                                                <div class="product__bottom-right">
+                                                    <div class="product__rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="product__rating-index">( 05)</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="items__card-wrapper">
+                                    <div class="product">
+                                        <a href="#" class="product__inner">
+                                            <div class="product__picture"></div>
+                                            <div class="product__info">
+                                                <div>
+                                                    <div class="product__name">Mockup Desing</div>
+                                                    <div class="product__category">PSD Template</div>
+                                                </div>
+                                                <div>
+                                                    <div class="product__price">$12</div>
+                                                </div>
+                                            </div>
+                                            <div class="product__bottom">
+                                                <div class="product__bottom-left">
+                                                    <div class="product__avatar"></div>
+                                                    <div class="product__author-name">D9ten</div>
+                                                </div>
+                                                <div class="product__bottom-right">
+                                                    <div class="product__rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="product__rating-index">( 05)</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="items__card-wrapper">
+                                    <div class="product">
+                                        <a href="#" class="product__inner">
+                                            <div class="product__picture"></div>
+                                            <div class="product__info">
+                                                <div>
+                                                    <div class="product__name">Responsive APP</div>
+                                                    <div class="product__category">Site Template</div>
+                                                </div>
+                                                <div>
+                                                    <div class="product__price">$20</div>
+                                                </div>
+                                            </div>
+                                            <div class="product__bottom">
+                                                <div class="product__bottom-left">
+                                                    <div class="product__avatar"></div>
+                                                    <div class="product__author-name">PsdBosS</div>
+                                                </div>
+                                                <div class="product__bottom-right">
+                                                    <div class="product__rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="product__rating-index">( 05)</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="items__card-wrapper">
+                                    <div class="product">
+                                        <a href="#" class="product__inner">
+                                            <div class="product__picture"></div>
+                                            <div class="product__info">
+                                                <div>
+                                                    <div class="product__name">WISTIA Corporate</div>
+                                                    <div class="product__category">WordPress</div>
+                                                </div>
+                                                <div>
+                                                    <div class="product__price">$59</div>
+                                                </div>
+                                            </div>
+                                            <div class="product__bottom">
+                                                <div class="product__bottom-left">
+                                                    <div class="product__avatar"></div>
+                                                    <div class="product__author-name">PsdBosS</div>
+                                                </div>
+                                                <div class="product__bottom-right">
+                                                    <div class="product__rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="product__rating-index">( 05)</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="items__card-wrapper">
+                                    <div class="product">
+                                        <a href="#" class="product__inner">
+                                            <div class="product__picture"></div>
+                                            <div class="product__info">
+                                                <div>
+                                                    <div class="product__name">Cartoon Face</div>
+                                                    <div class="product__category">Illsatration</div>
+                                                </div>
+                                                <div>
+                                                    <div class="product__price">$10</div>
+                                                </div>
+                                            </div>
+                                            <div class="product__bottom">
+                                                <div class="product__bottom-left">
+                                                    <div class="product__avatar"></div>
+                                                    <div class="product__author-name">Mikestro</div>
+                                                </div>
+                                                <div class="product__bottom-right">
+                                                    <div class="product__rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="product__rating-index">( 05)</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="items__card-wrapper">
+                                    <div class="product">
+                                        <a href="#" class="product__inner">
+                                            <div class="product__picture"></div>
+                                            <div class="product__info">
+                                                <div>
+                                                    <div class="product__name">Food Menu</div>
+                                                    <div class="product__category">Plugins</div>
+                                                </div>
+                                                <div>
+                                                    <div class="product__price">$15</div>
+                                                </div>
+                                            </div>
+                                            <div class="product__bottom">
+                                                <div class="product__bottom-left">
+                                                    <div class="product__avatar"></div>
+                                                    <div class="product__author-name">Gimsz</div>
+                                                </div>
+                                                <div class="product__bottom-right">
+                                                    <div class="product__rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="product__rating-index">( 05)</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="items__card-wrapper">
+                                    <div class="product">
+                                        <a href="#" class="product__inner">
+                                            <div class="product__picture"></div>
+                                            <div class="product__info">
+                                                <div>
+                                                    <div class="product__name">Grand Ballet - Dance</div>
+                                                    <div class="product__category">PSD Template</div>
+                                                </div>
+                                                <div>
+                                                    <div class="product__price">$12</div>
+                                                </div>
+                                            </div>
+                                            <div class="product__bottom">
+                                                <div class="product__bottom-left">
+                                                    <div class="product__avatar"></div>
+                                                    <div class="product__author-name">Greenta9</div>
+                                                </div>
+                                                <div class="product__bottom-right">
+                                                    <div class="product__rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="product__rating-index">( 05)</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="items__card-wrapper">
+                                    <div class="product">
+                                        <a href="#" class="product__inner">
+                                            <div class="product__picture"></div>
+                                            <div class="product__info">
+                                                <div>
+                                                    <div class="product__name">Mockup Desing</div>
+                                                    <div class="product__category">PSD Template</div>
+                                                </div>
+                                                <div>
+                                                    <div class="product__price">$12</div>
+                                                </div>
+                                            </div>
+                                            <div class="product__bottom">
+                                                <div class="product__bottom-left">
+                                                    <div class="product__avatar"></div>
+                                                    <div class="product__author-name">D9ten</div>
+                                                </div>
+                                                <div class="product__bottom-right">
+                                                    <div class="product__rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="product__rating-index">( 05)</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="items__card-wrapper">
+                                    <div class="product">
+                                        <a href="#" class="product__inner">
+                                            <div class="product__picture"></div>
+                                            <div class="product__info">
+                                                <div>
+                                                    <div class="product__name">Responsive APP</div>
+                                                    <div class="product__category">Site Template</div>
+                                                </div>
+                                                <div>
+                                                    <div class="product__price">$20</div>
+                                                </div>
+                                            </div>
+                                            <div class="product__bottom">
+                                                <div class="product__bottom-left">
+                                                    <div class="product__avatar"></div>
+                                                    <div class="product__author-name">PsdBosS</div>
+                                                </div>
+                                                <div class="product__bottom-right">
+                                                    <div class="product__rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="product__rating-index">( 05)</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- / items__sort-right -->
+                            <!-- / items__cards -->
+
+                            <div class="items__pages-numbers">
+                                <a href="#" class="link-no-decor items__pages-number items__pages-number--active">1</a>
+                                <a href="#" class="link-no-decor items__pages-number">2</a>
+                                <a href="#" class="link-no-decor items__pages-number">3</a>
+                                <a href="#" class="link-no-decor items__pages-number">4</a>
+                            </div>
+                            <!-- / items__pages-number -->
                         </div>
-                        <!-- / items__sort -->
-                        <div class="items__cards">
-                            <div class="items__card-wrapper">
-                                <div class="product">
-                                    <a href="#" class="product__inner">
-                                        <div class="product__picture"></div>
-                                        <div class="product__info">
-                                            <div>
-                                                <div class="product__name">WISTIA Corporate</div>
-                                                <div class="product__category">WordPress</div>
-                                            </div>
-                                            <div>
-                                                <div class="product__price">$59</div>
-                                            </div>
-                                        </div>
-                                        <div class="product__bottom">
-                                            <div class="product__bottom-left">
-                                                <div class="product__avatar"></div>
-                                                <div class="product__author-name">PsdBosS</div>
-                                            </div>
-                                            <div class="product__bottom-right">
-                                                <div class="product__rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <div class="product__rating-index">( 05)</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="items__card-wrapper">
-                                <div class="product">
-                                    <a href="#" class="product__inner">
-                                        <div class="product__picture"></div>
-                                        <div class="product__info">
-                                            <div>
-                                                <div class="product__name">Cartoon Face</div>
-                                                <div class="product__category">Illsatration</div>
-                                            </div>
-                                            <div>
-                                                <div class="product__price">$10</div>
-                                            </div>
-                                        </div>
-                                        <div class="product__bottom">
-                                            <div class="product__bottom-left">
-                                                <div class="product__avatar"></div>
-                                                <div class="product__author-name">Mikestro</div>
-                                            </div>
-                                            <div class="product__bottom-right">
-                                                <div class="product__rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <div class="product__rating-index">( 05)</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="items__card-wrapper">
-                                <div class="product">
-                                    <a href="#" class="product__inner">
-                                        <div class="product__picture"></div>
-                                        <div class="product__info">
-                                            <div>
-                                                <div class="product__name">Food Menu</div>
-                                                <div class="product__category">Plugins</div>
-                                            </div>
-                                            <div>
-                                                <div class="product__price">$15</div>
-                                            </div>
-                                        </div>
-                                        <div class="product__bottom">
-                                            <div class="product__bottom-left">
-                                                <div class="product__avatar"></div>
-                                                <div class="product__author-name">Gimsz</div>
-                                            </div>
-                                            <div class="product__bottom-right">
-                                                <div class="product__rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <div class="product__rating-index">( 05)</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="items__card-wrapper">
-                                <div class="product">
-                                    <a href="#" class="product__inner">
-                                        <div class="product__picture"></div>
-                                        <div class="product__info">
-                                            <div>
-                                                <div class="product__name">Grand Ballet - Dance</div>
-                                                <div class="product__category">PSD Template</div>
-                                            </div>
-                                            <div>
-                                                <div class="product__price">$12</div>
-                                            </div>
-                                        </div>
-                                        <div class="product__bottom">
-                                            <div class="product__bottom-left">
-                                                <div class="product__avatar"></div>
-                                                <div class="product__author-name">Greenta9</div>
-                                            </div>
-                                            <div class="product__bottom-right">
-                                                <div class="product__rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <div class="product__rating-index">( 05)</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="items__card-wrapper">
-                                <div class="product">
-                                    <a href="#" class="product__inner">
-                                        <div class="product__picture"></div>
-                                        <div class="product__info">
-                                            <div>
-                                                <div class="product__name">Mockup Desing</div>
-                                                <div class="product__category">PSD Template</div>
-                                            </div>
-                                            <div>
-                                                <div class="product__price">$12</div>
-                                            </div>
-                                        </div>
-                                        <div class="product__bottom">
-                                            <div class="product__bottom-left">
-                                                <div class="product__avatar"></div>
-                                                <div class="product__author-name">D9ten</div>
-                                            </div>
-                                            <div class="product__bottom-right">
-                                                <div class="product__rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <div class="product__rating-index">( 05)</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="items__card-wrapper">
-                                <div class="product">
-                                    <a href="#" class="product__inner">
-                                        <div class="product__picture"></div>
-                                        <div class="product__info">
-                                            <div>
-                                                <div class="product__name">Responsive APP</div>
-                                                <div class="product__category">Site Template</div>
-                                            </div>
-                                            <div>
-                                                <div class="product__price">$20</div>
-                                            </div>
-                                        </div>
-                                        <div class="product__bottom">
-                                            <div class="product__bottom-left">
-                                                <div class="product__avatar"></div>
-                                                <div class="product__author-name">PsdBosS</div>
-                                            </div>
-                                            <div class="product__bottom-right">
-                                                <div class="product__rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <div class="product__rating-index">( 05)</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="items__card-wrapper">
-                                <div class="product">
-                                    <a href="#" class="product__inner">
-                                        <div class="product__picture"></div>
-                                        <div class="product__info">
-                                            <div>
-                                                <div class="product__name">WISTIA Corporate</div>
-                                                <div class="product__category">WordPress</div>
-                                            </div>
-                                            <div>
-                                                <div class="product__price">$59</div>
-                                            </div>
-                                        </div>
-                                        <div class="product__bottom">
-                                            <div class="product__bottom-left">
-                                                <div class="product__avatar"></div>
-                                                <div class="product__author-name">PsdBosS</div>
-                                            </div>
-                                            <div class="product__bottom-right">
-                                                <div class="product__rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <div class="product__rating-index">( 05)</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="items__card-wrapper">
-                                <div class="product">
-                                    <a href="#" class="product__inner">
-                                        <div class="product__picture"></div>
-                                        <div class="product__info">
-                                            <div>
-                                                <div class="product__name">Cartoon Face</div>
-                                                <div class="product__category">Illsatration</div>
-                                            </div>
-                                            <div>
-                                                <div class="product__price">$10</div>
-                                            </div>
-                                        </div>
-                                        <div class="product__bottom">
-                                            <div class="product__bottom-left">
-                                                <div class="product__avatar"></div>
-                                                <div class="product__author-name">Mikestro</div>
-                                            </div>
-                                            <div class="product__bottom-right">
-                                                <div class="product__rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <div class="product__rating-index">( 05)</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="items__card-wrapper">
-                                <div class="product">
-                                    <a href="#" class="product__inner">
-                                        <div class="product__picture"></div>
-                                        <div class="product__info">
-                                            <div>
-                                                <div class="product__name">Food Menu</div>
-                                                <div class="product__category">Plugins</div>
-                                            </div>
-                                            <div>
-                                                <div class="product__price">$15</div>
-                                            </div>
-                                        </div>
-                                        <div class="product__bottom">
-                                            <div class="product__bottom-left">
-                                                <div class="product__avatar"></div>
-                                                <div class="product__author-name">Gimsz</div>
-                                            </div>
-                                            <div class="product__bottom-right">
-                                                <div class="product__rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <div class="product__rating-index">( 05)</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="items__card-wrapper">
-                                <div class="product">
-                                    <a href="#" class="product__inner">
-                                        <div class="product__picture"></div>
-                                        <div class="product__info">
-                                            <div>
-                                                <div class="product__name">Grand Ballet - Dance</div>
-                                                <div class="product__category">PSD Template</div>
-                                            </div>
-                                            <div>
-                                                <div class="product__price">$12</div>
-                                            </div>
-                                        </div>
-                                        <div class="product__bottom">
-                                            <div class="product__bottom-left">
-                                                <div class="product__avatar"></div>
-                                                <div class="product__author-name">Greenta9</div>
-                                            </div>
-                                            <div class="product__bottom-right">
-                                                <div class="product__rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <div class="product__rating-index">( 05)</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="items__card-wrapper">
-                                <div class="product">
-                                    <a href="#" class="product__inner">
-                                        <div class="product__picture"></div>
-                                        <div class="product__info">
-                                            <div>
-                                                <div class="product__name">Mockup Desing</div>
-                                                <div class="product__category">PSD Template</div>
-                                            </div>
-                                            <div>
-                                                <div class="product__price">$12</div>
-                                            </div>
-                                        </div>
-                                        <div class="product__bottom">
-                                            <div class="product__bottom-left">
-                                                <div class="product__avatar"></div>
-                                                <div class="product__author-name">D9ten</div>
-                                            </div>
-                                            <div class="product__bottom-right">
-                                                <div class="product__rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <div class="product__rating-index">( 05)</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="items__card-wrapper">
-                                <div class="product">
-                                    <a href="#" class="product__inner">
-                                        <div class="product__picture"></div>
-                                        <div class="product__info">
-                                            <div>
-                                                <div class="product__name">Responsive APP</div>
-                                                <div class="product__category">Site Template</div>
-                                            </div>
-                                            <div>
-                                                <div class="product__price">$20</div>
-                                            </div>
-                                        </div>
-                                        <div class="product__bottom">
-                                            <div class="product__bottom-left">
-                                                <div class="product__avatar"></div>
-                                                <div class="product__author-name">PsdBosS</div>
-                                            </div>
-                                            <div class="product__bottom-right">
-                                                <div class="product__rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <div class="product__rating-index">( 05)</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- / items__cards -->
-                        <div class="items__pages-numbers">
-                            <a href="#" class="link-no-decor items__pages-number items__pages-number--active">1</a>
-                            <a href="#" class="link-no-decor items__pages-number">2</a>
-                            <a href="#" class="link-no-decor items__pages-number">3</a>
-                            <a href="#" class="link-no-decor items__pages-number">4</a>
-                        </div>
-                        <!-- / items__pages-number -->
+                        <!-- / items -->
                     </div>
+                    <!-- / right -->
                 </div>
             </div>
+            <!-- / container -->
         </main>
 
         <footer class="footer">
@@ -825,6 +984,12 @@
     <!-- jQuery UI -->
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
             crossorigin="anonymous"></script>
+
+    <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- range slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
 
     <!-- init plugin -->
     <script src="js/init.js"></script>

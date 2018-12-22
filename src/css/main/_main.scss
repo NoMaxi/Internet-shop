@@ -1,8 +1,15 @@
 .main {
     background-color: $mint-cream;
     min-height: 100vh;
-    padding-top: 50px;
     padding-bottom: 111px;
+
+    @include tablet {
+        padding-bottom: 80px;
+    }
+
+    @include mobile {
+        padding-bottom: 50px;
+    }
 
     &__container {
         display: flex;

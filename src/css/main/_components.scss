@@ -1,0 +1,199 @@
+.categories {
+    padding: 26px 30px;
+    width: 100%;
+    min-width: 270px;
+    border: 1px solid #d7d7d7;
+    background-color: #fff;
+    color: $dark-gray;
+    margin-bottom: 30px;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        border-bottom: 1px solid #d4e3e8;
+        padding-bottom: 20px;
+        max-width: 210px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &__list {
+        padding: 28px 0 18px;
+    }
+
+    &__item {
+        display: flex;
+        font-size: 15px;
+        font-weight: 400;
+
+        & + & {
+            margin-top: 28px;
+        }
+
+        &::before {
+            display: block;
+            content: "\f105";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin-right: 8px;
+            color: $green-apple;
+        }
+    }
+
+    &__link {
+        margin-right: auto;
+        max-width: 140px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &__amount {
+        color: $light-blue;
+        max-width: 42px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &__amount-bracket {
+        color: $light-blue;
+    }
+}
+
+.price-range {
+    border: 1px solid #d7d7d7;
+    background-color: $white;
+    padding: 25px 30px 30px;
+    margin-bottom: 30px;
+    min-width: 270px;
+
+    &__title {
+        color: #263238;
+        font-size: 20px;
+        font-weight: 700;
+        border-bottom: 1px solid #dde3e8;
+        padding-bottom: 18px;
+    }
+    &__wrapper {
+        padding-bottom: 50px;
+
+        .irs-handle {
+            top: 30px;
+            width: 16px;
+            height: 16px;
+            border: 3px solid $green-apple;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .irs-line {
+            height: 5px;
+            border-radius: 5px;
+        }
+        .irs-bar {
+            height: 5px;
+            background: #37474f;
+        }
+        .irs-from, 
+        .irs-to, 
+        .irs-single {
+            top: 59px;
+            background: none;
+            color: #78909c;
+            font-size: 15px;
+            font-weight: 400;
+        }
+        .irs-from:before, 
+        .irs-to:before, 
+        .irs-single:before {
+            display: none;
+        }
+    }
+    &__submit {
+        width: 100%;
+        height: 46px;
+        background-color: $green-apple;
+        border: none;
+        text-align: center;
+        line-height: 46px;
+        color: $white;
+        font-size: 15px;
+        font-weight: 500;
+        outline: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+        transition: background-color .3s ease-out;
+
+        &:hover {
+            background-color: darken($green-apple,10);
+        }
+
+        .fas {
+            margin-right: 9px;
+        }
+    }
+}
+
+.sidebar-hot {
+    border: 1px solid #d7d7d7;
+    background-color: #ffffff;
+    padding: 25px 30px 30px;
+    min-width: 270px;
+
+    &__title {
+        color: #263238;
+        font-size: 20px;
+        font-weight: 700;
+        border-bottom: 1px solid #dde3e8;
+        padding-bottom: 18px;
+    }
+    &__link-more {
+        display: block;
+        background-color: $green-apple;
+        height: 46px;
+        line-height: 46px;
+        color: $white;
+        text-align: center;
+        padding: 0 12px;
+        text-decoration: none;
+        transition: background-color .3s ease-out;
+
+        &:hover {
+            background-color: darken($green-apple,10);
+        }
+    }
+
+    &__wrapper {
+        .product {
+            padding: 0;
+            border-bottom: 1px solid #d7d7d7;
+            margin-bottom: 32px;
+
+            &:last-child {
+                margin-bottom: 0;
+                border-bottom: none;
+            }
+
+            &__inner {
+                box-shadow: none;
+            }
+
+            &__picture {
+                height: 121px;
+            }
+
+            &__info {
+                padding: 30px 0 16px;
+            }
+
+            &__name {
+                font-size: 16px;
+            }
+
+            &__bottom {
+                padding: 16px 0 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,2300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Internet-shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
+    <!-- izimodal -->
+    <link rel="stylesheet" href="css/plugins/izimodal.css">
+    <!-- custom style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- modal structure -->
+        <div id="modal">
+            <div class="login">
+                <span class="login__close">
+                    <i class="fas fa-times"></i>
+                </span>
+                <h2 class="login__title">Login</h2>
+
+                <form action="#" class="login__form">
+                    <div class="login__input-group">
+                        <i class="login__input-icon fas fa-user"></i>
+                        <input class="login__input" type="text" placeholder="Name">
+                    </div>
+                    <div class="login__input-group">
+                        <i class="login__input-icon fas fa-lock"></i>
+                        <input class="login__input" type="password" placeholder="Password">
+                    </div>
+                    <div class="login__bottom">
+                        <button class="login__btn-submit" type="submit">Submit</button>
+
+                        <a href="#" class="login__register">
+                            <i class="login__reg-icon fas fa-edit"></i>
+                            <span class="login__reg-label">Creat An Account?</span>
+                        </a>
+                    </div>
+                    <a href="#" class="login__lost-pass link-decor-inverse">Lost Password?</a>
+                </form>
+            </div>
+        </div>
+
+        <!-- header -->
+        <div class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="#" class="header__logo">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+
+                    <div class="header__right-s">
+                        <div class="header__help">
+                            <span class="header__label-red">Need help?</span>
+                            <span> Talk to an expert: <a class="link-inherit link-decor-inverse" href="tel:+61 3 8376 6284">+61 3 8376 6284</a></span>
+                        </div>
+
+                        <div class="header__notify-wrap">
+                            <div class="header__notify-item header__cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="header__item-number">8</span>
+                            </div>
+
+                            <div class="cart-drop-down">
+                                <ul class="cart-drop-down__list">
+                                    <li class="cart-drop-down__list-item">
+                                        <a href="#" class="cart-drop-down__item-img">
+                                            <img class="cart-drop-down__item-pic" src="https://store.storeimages.cdn-apple.com/4667/as-images.apple.com/is/image/AppleInc/aos/published/images/M/QH/MQH12/MQH12?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1516399629065" alt="product">
+                                        </a>
+                                        <div class="cart-drop-down__item-info">
+                                            <a href="#" class="cart-drop-down__item-name link-decor-inverse">Grand BalletGrand BalletGrand BalletGrand Ballet</a>
+                                            <div class="cart-drop-down__item-category">WordPress</div>
+                                            <div class="cart-drop-down__item-price">$59</div>
+                                        </div>
+                                    </li>
+
+                                    <li class="cart-drop-down__list-item">
+                                        <a href="#" class="cart-drop-down__item-img"></a>
+                                        <div class="cart-drop-down__item-info">
+                                            <a href="#" class="cart-drop-down__item-name link-decor-inverse">Apple Device</a>
+                                            <div class="cart-drop-down__item-category">WordPress</div>
+                                            <div class="cart-drop-down__item-price">$749</div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="cart-drop-down__bottom">
+                                    <div class="cart-drop-down__total-price">
+                                        <span>Total</span>
+                                        <span>$118</span>
+                                    </div>
+                                    <div class="cart-drop-down__actions">
+                                        <a href="#" class="cart-drop-down__action-cart">Go to Cart</a>
+                                        <a href="#" class="cart-drop-down__action-checkout">Go to Checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header__actions header__actions--anon">
+                            <a href="#" class="header__btn header__btn--green btn-login-form">Login</a>
+                            <a href="#" class="header__btn header__btn--red">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <!-- navigation menu -->
+            <section class="menu">
+                <div class="container w-100">
+                    <div class="menu__btn">
+                        <div class="menu__btn-bar"></div>
+                        <div class="menu__btn-bar"></div>
+                        <div class="menu__btn-bar"></div>
+                    </div>
+                    <nav class="menu__nav">
+                        <a class="menu__nav-link link-no-decor" href="#">Home</a>
+                        <a class="menu__nav-link link-no-decor" href="#">About</a>
+                        <a class="menu__nav-link link-no-decor" href="#">WordPress</a>
+                        <a class="menu__nav-link link-no-decor" href="#">Joomla</a>
+                        <a class="menu__nav-link link-no-decor" href="#">PSD</a>
+                        <a class="menu__nav-link link-no-decor" href="#">Plugins</a>
+                        <a class="menu__nav-link link-no-decor" href="#">Components</a>
+                        <a class="menu__nav-link link-no-decor" href="#">Pages</a>
+                        <a class="menu__nav-link link-no-decor" href="#">Contact</a>
+                        <a class="menu__nav-link link-no-decor" href="#">Help</a>
+                    </nav>
+                </div>
+            </section>
+
+            <!-- welcome -->
+            <section class="welcome">
+                <div class="container">
+                    <div class="welcome__inner">
+                        <h1 class="welcome__title">Welcome To Foxtar Market Place!</h1>
+                        <span class="welcome__subtitle">Premium WordPress Themes, Web Templates and Many More ...</span>
+                        <form class="welcome__form">
+                            <input class="welcome__search-input" type="search" placeholder="Search Your Keywords . . .">
+                            <input class="welcome__search-submit" type="submit" value="">
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- release-products -->
+            <section class="release-products">
+                <h3 class="release-products__title text-center">let’s check out our newest release products</h3>
+                <div class="release-products__tabs">
+                    <ul class="release-products__tabs-list">
+                        <li class="release-products__tabs-item">
+                            <a class="release-products__link link-no-decor"
+                               href="#all">
+                                <span>All</span>
+                            </a>
+                        </li>
+                        <li class="release-products__tabs-item">
+                            <a class="release-products__link link-no-decor"
+                               href="#wordpress">
+                                <span>WordPress</span>
+                            </a>
+                        </li>
+                        <li class="release-products__tabs-item">
+                            <a class="release-products__link link-no-decor"
+                               href="#joomla">
+                                <span>Joomla</span>
+                            </a>
+                        </li>
+                        <li class="release-products__tabs-item">
+                            <a class="release-products__link link-no-decor"
+                               href="#plugins">
+                                <span>Plugins</span>
+                            </a>
+                        </li>
+                        <li class="release-products__tabs-item">
+                            <a class="release-products__link link-no-decor"
+                               href="#component">
+                                <span>Component</span>
+                            </a>
+                        </li>
+                        <li class="release-products__tabs-item">
+                            <a class="release-products__link link-no-decor"
+                               href="#psd">
+                                <span>PSD</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- all card-items -->
+                    <div id="all">
+                        <div class="release-products__cards-wrapper">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /all card-items -->
+
+                    <!-- wordpress card-items -->
+                    <div id="wordpress">
+                        <div class="release-products__cards-wrapper">
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /wordpress card-items -->
+
+                    <!-- joomla card-items -->
+                    <div id="joomla">
+                        <div class="release-products__cards-wrapper">
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /joomla card-items -->
+
+                    <!-- plugins card-items -->
+                    <div id="plugins">
+                        <div class="release-products__cards-wrapper">
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /plugins card-items -->
+
+                    <!-- component card-items -->
+                    <div id="component">
+                        <div class="release-products__cards-wrapper">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /component card-items -->
+
+                    <!-- psd card-items -->
+                    <div id="psd">
+                        <div class="release-products__cards-wrapper">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture"></div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /psd card-items -->
+
+                    <div class="release-products__btn">
+                        <a href="#"
+                           class="release-products__btn-item link-no-decor">All
+                            New Items</a>
+                        <a href="#"
+                           class="release-products__btn-item link-no-decor">Popular
+                            Items</a>
+                    </div>
+                </div>
+
+            </section>
+            <!-- /release-products -->
+
+            <!-- trending-products -->
+            <section class="trending-products">
+                <h3 class="trending-products__title text-center">This Week Trending Products</h3>
+                <!-- / trending-products__title -->
+                <div class="owl-carousel trending-products__carousel">
+                    <div class="trending-products__carousel-item">
+                        <div class="trending-products__carousel-card">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / trending-products__carousel-item 1-->
+                    <div class="trending-products__carousel-item">
+                        <div class="trending-products__carousel-card">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / trending-products__carousel-item 2-->
+                    <div class="trending-products__carousel-item">
+                        <div class="trending-products__carousel-card">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / trending-products__carousel-item 3-->
+                    <div class="trending-products__carousel-item">
+                        <div class="trending-products__carousel-card">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / trending-products__carousel-item 4-->
+                    <div class="trending-products__carousel-item">
+                        <div class="trending-products__carousel-card">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / trending-products__carousel-item 5-->
+                    <div class="trending-products__carousel-item">
+                        <div class="trending-products__carousel-card">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / trending-products__carousel-item 6-->
+                    <div class="trending-products__carousel-item">
+                        <div class="trending-products__carousel-card">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / trending-products__carousel-item 7-->
+                    <div class="trending-products__carousel-item">
+                        <div class="trending-products__carousel-card">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / trending-products__carousel-item 8-->
+                    <div class="trending-products__carousel-item">
+                        <div class="trending-products__carousel-card">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / trending-products__carousel-item 9-->
+                    <div class="trending-products__carousel-item">
+                        <div class="trending-products__carousel-card">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / trending-products__carousel-item 10-->
+                    <div class="trending-products__carousel-item">
+                        <div class="trending-products__carousel-card">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / trending-products__carousel-item 11-->
+                    <div class="trending-products__carousel-item">
+                        <div class="trending-products__carousel-card">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / trending-products__carousel-item 12-->
+                    <div class="trending-products__carousel-item">
+                        <div class="trending-products__carousel-card">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / trending-products__carousel-item 13-->
+                    <div class="trending-products__carousel-item">
+                        <div class="trending-products__carousel-card">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / trending-products__carousel-item 14-->
+                    <div class="trending-products__carousel-item">
+                        <div class="trending-products__carousel-card">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / trending-products__carousel-item 15-->
+                    <div class="trending-products__carousel-item">
+                        <div class="trending-products__carousel-card">
+                            <div class="product">
+                                <a href="#" class="product__inner">
+                                    <div class="product__picture">
+                                        <div class="product__marker">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <div>
+                                            <div class="product__name">Responsive Mobile APP</div>
+                                            <div class="product__category">Site Template</div>
+                                        </div>
+                                        <div>
+                                            <div class="product__price">$19</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__bottom">
+                                        <div class="product__bottom-left">
+                                            <div class="product__avatar"></div>
+                                            <div class="product__author-name">Radiustheme</div>
+                                        </div>
+                                        <div class="product__bottom-right">
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__rating-index">( 05)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / trending-products__carousel-item 16-->
+                </div>
+                <!-- / trending-products__carousel -->
+            </section>
+            <!-- / trending-products -->
+
+            <!--why-choose-->
+            <section class="why-choose">
+                <div class="container">
+                    <div class="why-choose__inner">
+                        <h3 class="why-choose__title">why you choose foxtar market
+                            place?</h3>
+                        <div class="why-choose__list">
+                            <div class="why-choose__item">
+                                <div class="why-choose__item-icon"></div>
+                                <h4 class="why-choose__item-title">easily buy &amp; sell</h4>
+                                <p class="why-choose__item-description">Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.</p>
+                            </div>
+                            <div class="why-choose__item">
+                                <div class="why-choose__item-icon"></div>
+                                <h4 class="why-choose__item-title">quality products</h4>
+                                <p class="why-choose__item-description">Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.</p>
+                            </div>
+                            <div class="why-choose__item">
+                                <div class="why-choose__item-icon"></div>
+                                <h4 class="why-choose__item-title">100% secure payment</h4>
+                                <p class="why-choose__item-description">Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!--/why-choose-->
+
+            <!--become-author-->
+            <section class="become-author">
+                <div class="become-author__outer">
+                    <div class="become-author__inner">
+                        <div class="become-author__content">
+                            <div class="become-author__description">
+                                <p>over <span class="become-author__description--bold">20,000</span>
+                                    authors are involved here!</p>
+                            </div>
+                            <div class="become-author__btn text-center">
+                                <a class="become-author__link link-no-decor" href="#">become
+                                    an author</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/become-author-->
+
+            <section class="free-tutorials">
+                <div class="container">
+                    <h3 class="free-tutorials__title text-center">free monthly tutorials to help you with your project</h3>
+                    <div class="free-tutorials__wrapper">
+                        <div class="free-tutorials__item">
+                            <div class="free-tutorials__item-inner">
+                                <img class="free-tutorials__item-img"
+                                     src="img/tutorial-card.png" alt="Web Design">
+                                <h4 class="free-tutorials__item-title text-center">
+                                    <a class="free-tutorials__item-link link-no-decor"
+                                       href="#">web design tutorials</a></h4>
+                            </div>
+                        </div>
+                        <div class="free-tutorials__item">
+                            <div class="free-tutorials__item-inner text-center">
+                                <img class="free-tutorials__item-img" src="img/tutorial-card.png" alt="WordPress">
+                                <h4 class="free-tutorials__item-title"><a class="free-tutorials__item-link link-no-decor" href="#">WordPress tutorials</a></h4>
+                            </div>
+                        </div>
+                        <div class="free-tutorials__item">
+                            <div class="free-tutorials__item-inner text-center">
+                                <img class="free-tutorials__item-img" src="img/tutorial-card.png" alt="HTML & CSS">
+                                <h4 class="free-tutorials__item-title"><a class="free-tutorials__item-link link-no-decor" href="#">HTML & CSS tutorials</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="container w-100">
+                    <div class="footer__inner">
+                        <div class="footer__item">
+                            <h5 class="footer__item-title">about company</h5>
+                            <div class="footer__item-bar"></div>
+                            <p class="footer__item-content">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus.</p>
+                            <span class="footer__item-contact footer__item-contact--address">PO Box 16122 Collins Street West
+                                Victoria 8007 Australia</span>
+                            <span class="footer__item-contact footer__item-contact--phone">+61 3 8376 6284</span>
+                        </div>
+
+                        <div class="footer__item">
+                            <h5 class="footer__item-title">join our community</h5>
+                            <div class="footer__item-bar"></div>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a class="link-inherit link-no-decor" href="#">home</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="link-inherit link-no-decor" href="#">forums</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="link-inherit link-no-decor" href="#">become an author</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="link-inherit link-no-decor" href="#">community meetups</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="link-inherit link-no-decor" href="#">become an affiliate</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__item">
+                            <h5 class="footer__item-title">need help?</h5>
+                            <div class="footer__item-bar"></div>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a class="link-inherit link-no-decor" href="#">help center</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="link-inherit link-no-decor" href="#">foxtar market terms</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="link-inherit link-no-decor" href="#">author terms</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="link-inherit link-no-decor" href="#">foxtar licenses</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="link-inherit link-no-decor" href="#">contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__item">
+                            <h5 class="footer__item-title">follow us on</h5>
+                            <div class="footer__item-bar"></div>
+                            <ul class="footer__list footer__list--social">
+                                <li class="footer__list-item">
+                                    <a class="link-inherit link-no-decor" href="#">
+                                        <img src="img/facebook-icon.png" alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="link-inherit link-no-decor" href="#">
+                                        <img src="img/twitter-icon.png" alt="twitter">
+                                    </a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="link-inherit link-no-decor" href="#">
+                                        <img src="img/youtube-icon.png" alt="youtube">
+                                    </a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="link-inherit link-no-decor" href="#">
+                                        <img src="img/pinterest-icon.png" alt="pinterest">
+                                    </a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="link-inherit link-no-decor" href="#">
+                                        <img src="img/linkedin-icon.png" alt="linkedin">
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h6 class="footer__item-subtitle">newsletter sign up!</h6>
+                            <form class="footer__sign-up-form">
+                                <input class="footer__sign-up-input" type="search" placeholder="E-mail Address">
+                                <input class="footer__sign-up-submit" type="submit" value="&#xf124">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span class="footer__bottom-copyright text-center">&copy; 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+            crossorigin="anonymous"></script>
+
+    <!-- owl-carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- izimodal -->
+    <script src="js/izimodal.js"></script>
+
+    <!-- init plugin -->
+    <script src="js/init.js"></script>
+</body>
+</html>
